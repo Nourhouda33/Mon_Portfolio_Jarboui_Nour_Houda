@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Nour</title>
+  <link href="img/nour.png" rel="icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" >Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="parcours.html" >Parcours Académique</a>
+      <a href="skills.html">Compétences</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="manifestations.html" >Manifestations</a>
+      <a href="matieres.html">Matières</a>
+      <a href="contact.html">Contact</a>
+      <a href="quiz.html" class="active">Quiz</a>
+    </nav>
+  </header>
+
+  <main class="quiz-container">
+    <h1>Quiz : Reconnaissez-vous la Tunisie ?</h1>
+    <p>Répondez aux questions suivantes pour tester vos connaissances sur les images et paysages typiques de la Tunisie et d'autres pays.</p>
+    
+    <form id="quiz-form">
+      <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. Cette porte bleue est emblématique de quel endroit ?</strong></p>
+        <img src="img/porte.jpg" alt="Porte Bleue" style="width: 100%; max-width: 300px;">
+        <div>
+          <input type="radio" name="q1" value="Tunisie" id="q1a">
+          <label for="q1a">Tunisie</label>
+        </div>
+        <div>
+          <input type="radio" name="q1" value="Grèce" id="q1b">
+          <label for="q1b">Grèce</label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Ce désert se trouve dans quel pays ?</strong></p>
+        <img src="img/sahra.jpg" alt="Désert" style="width: 100%; max-width: 300px;">
+        <div>
+          <input type="radio" name="q2" value="Tunisie" id="q2a">
+          <label for="q2a">Tunisie</label>
+        </div>
+        <div>
+          <input type="radio" name="q2" value="Sahara occidental" id="q2b">
+          <label for="q2b">Sahara occidental</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><strong>3. Cette mosquée célèbre est située où ?</strong></p>
+        <img src="img/m.jpg" alt="Mosquée" style="width: 100%; max-width: 300px;">
+        <div>
+          <input type="radio" name="q3" value="Tunisie" id="q3a">
+          <label for="q3a">Tunisie</label>
+        </div>
+        <div>
+          <input type="radio" name="q3" value="Maroc" id="q3b">
+          <label for="q3b">Maroc</label>
+        </div>
+      </div>
+      <!-- Question 3 -->
+<div class="question">
+    <p><strong>3. Quelle est cette célèbre plage ?</strong></p>
+    <img src="img/plage.jpg" alt="Plage" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q3" value="Tunisie" id="q3a">
+      <label for="q3a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q3" value="Égypte" id="q3b">
+      <label for="q3b">Égypte</label>
+    </div>
+  </div>
+  
+  <!-- Question 4 -->
+  <div class="question">
+    <p><strong>4. Cette médina historique se trouve dans quel pays ?</strong></p>
+    <img src="img/medina.jpg" alt="Médina" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q4" value="Tunisie" id="q4a">
+      <label for="q4a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q4" value="Maroc" id="q4b">
+      <label for="q4b">Maroc</label>
+    </div>
+  </div>
+  
+  <!-- Question 5 -->
+  <div class="question">
+    <p><strong>5. Où se situe cette célèbre mosquée ?</strong></p>
+    <img src="img/mosquee.jpg" alt="Mosquée" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q5" value="Tunisie" id="q5a">
+      <label for="q5a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q5" value="Turquie" id="q5b">
+      <label for="q5b">Turquie</label>
+    </div>
+  </div>
+  
+  <!-- Question 6 -->
+  <div class="question">
+    <p><strong>6. Cette médina de Tunis est classée au patrimoine mondial de l'UNESCO. Où se trouve-t-elle ?</strong></p>
+    <img src="img/medina_tunis.jpg" alt="Médina de Tunis" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q6" value="Tunisie" id="q6a">
+      <label for="q6a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q6" value="Egypte" id="q6b">
+      <label for="q6b">Egypte</label>
+    </div>
+  </div>
+  
+  <!-- Question 7 -->
+  <div class="question">
+    <p><strong>7. Quelle est cette belle ville portuaire ?</strong></p>
+    <img src="img/ville_portuaire.jpg" alt="Ville portuaire" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q7" value="Tunisie" id="q7a">
+      <label for="q7a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q7" value="Liban" id="q7b">
+      <label for="q7b">Liban</label>
+    </div>
+  </div>
+  
+  <!-- Question 8 -->
+  <div class="question">
+    <p><strong>8. Ce site historique est situé où ?</strong></p>
+    <img src="img/ruines_antiques.jpg" alt="Ruines antiques" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q8" value="Tunisie" id="q8a">
+      <label for="q8a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q8" value="Grèce" id="q8b">
+      <label for="q8b">Grèce</label>
+    </div>
+  </div>
+  
+  <!-- Question 9 -->
+  <div class="question">
+    <p><strong>9. Où cette célèbre architecture se trouve-t-elle ?</strong></p>
+    <img src="img/architecture.jpg" alt="Architecture" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q9" value="Tunisie" id="q9a">
+      <label for="q9a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q9" value="Italie" id="q9b">
+      <label for="q9b">Italie</label>
+    </div>
+  </div>
+  
+  <!-- Question 10 -->
+
+  <div class="question">
+    <p><strong>10. Ce marché traditionnel se trouve dans quel pays ?</strong></p>
+    <img src="img/market.jpg" alt="Marché traditionnel" style="width: 100%; max-width: 300px;">
+    <div>
+      <input type="radio" name="q10" value="Tunisie" id="q10a">
+      <label for="q10a">Tunisie</label>
+    </div>
+    <div>
+      <input type="radio" name="q11" value="Egypte" id="q10b">
+      <label for="q10b">Egypte</label>
+    </div>
+  </div>
+  
+      <!-- Ajoutez d'autres questions similaires -->
+      
+      <button type="button" id="submit-btn">Valider</button>
+      <script src="js/script.js"></script>
+    </form>
+    <div id="result-container" style="display: none; margin-top: 20px;">
+      <h2>Résultats :</h2>
+      <p id="score"></p>
+      <ul id="corrections" style="list-style-type: none; padding: 0;"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 Mon Portfolio. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
