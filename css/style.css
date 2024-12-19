@@ -1,4 +1,4 @@
-/* Style de base */
+
 /* Style global */
 body {
  
@@ -72,9 +72,9 @@ body {
 
 /* Animation d'apparition */
 .fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;/*L'élément est invisible au départ.*/
+  transform: translateY(20px);/* L'élément est décalé de 20 pixels vers le bas par rapport à sa position normale*/
+  animation: fadeIn 1s ease-in-out forwards;/*Le nom de l'animation (défini dans @keyframes)*/
 }
 
 @keyframes fadeIn {
@@ -268,59 +268,7 @@ footer {
   line-height: 1.6;
 }
 
-.skills-circles {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
 
-.circle {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: conic-gradient(#ccc 0deg, #ccc 360deg); /* Par défaut vide */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: bold;
-  margin: 0 10px;
-  transition: background 0.5s ease;
-}
-
-.circle span {
-  position: absolute;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fff;
-}
-
-/* Texte sous les cercles */
-.circle p {
-  position: relative;
-  top: 15px;
-  font-size: 1rem;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-}
-
-@media (max-width: 767px) {
-  #about .row {
-      flex-direction: column;
-  }
-
-  .profile-section, .about-me {
-      text-align: center;
-  }
-
-  .profile-section .about-img img {
-      width: 150px;
-      height: 150px;
-  }
-}
 
 
 /* Page Contact */
@@ -505,13 +453,7 @@ footer {
   line-height: 1.5;
 }
 
-/* Footer */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -639,13 +581,6 @@ footer {
   line-height: 1.5;
 }
 
-/* Footer */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -742,22 +677,22 @@ button:hover {
   background-color: #555;
 }
 #result-container {
-  background-color: #f9f9f9;
+  background-color: #333;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 8px;
 }
 
 #result-container h2 {
-  color: #333;
+  color: #aaa259;
 }
 
 #corrections li {
   margin: 8px 0;
   font-size: 14px;
-  color: #555;
+  color: #fcfafa;
 }
 
 #corrections li strong {
-  color: #007bff;
+  color: #aaa259;
 }

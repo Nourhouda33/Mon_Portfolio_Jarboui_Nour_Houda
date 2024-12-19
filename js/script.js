@@ -1,17 +1,7 @@
 
 
-const nav = document.getElementsByTagName('nav')[0]; // Accède au premier élément <nav>
-let activeLink = null; // Variable pour stocker le lien actif
 
-nav.addEventListener('click', function (e) {
-  if (e.target.tagName === 'A') { // Vérifie si un lien <a> a été cliqué
-    if (activeLink) {
-      activeLink.classList.remove('active'); // Retire l'ancien actif
-    }
-    e.target.classList.add('active'); // Ajoute la classe active au lien cliqué
-    activeLink = e.target; // Met à jour le lien actif
-  }
-});
+
 
   
  
@@ -53,13 +43,12 @@ function validateEmail(email) {
 
 
 
-
+document.addEventListener('DOMContentLoaded', function () {
   const submitButton = document.getElementById('submit-btn');
   if (!submitButton) {
     console.error("Le bouton avec l'ID 'submit-btn' est introuvable dans le DOM.");
   } else {
     submitButton.addEventListener('click', function () {
-  document.getElementById('submit-btn').addEventListener('click', function () {
     // Les réponses correctes
     const correctAnswers = {
       q1: 'Tunisie',
@@ -113,6 +102,6 @@ function validateEmail(email) {
     correctionsElement.innerHTML = corrections.join('');
     resultContainer.style.display = 'block';
   });
-});
-}
+}});
+
   
